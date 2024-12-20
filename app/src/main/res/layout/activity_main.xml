@@ -26,6 +26,7 @@
         android:id="@+id/Email_EditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="Email"
         android:inputType="textEmailAddress"
         />
     <TextView
@@ -49,12 +50,14 @@
         android:layout_height="wrap_content"/>
 
     <Button
+        android:id="@+id/Zatwierdz_Button"
         android:layout_width="140dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
         android:textColor="@color/black"
         android:textSize="20sp"
+        android:backgroundTint="#008080"
         android:text="Zatwierdz"
         app:cornerRadius="5dp" />
     <TextView
@@ -62,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="elo"/>
+        android:text=""/>
 
 
 
