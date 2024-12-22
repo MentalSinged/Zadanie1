@@ -2,10 +2,26 @@ class SelectionSorter:
     def __init__(self):
         self.array: list =[]
 
+    #********************************************************
+    #* nazwa funkcji:       sort
+    #* parametry wejściowe: brak
+    #* wartość zwracana:    brak 
+    #* autor:               Ja
+    #* ****************************************************
+
     def sort(self):
         for i in range(len(self.array)):
             max_index = self.max_value(i,None)
             self.array[i], self.array[max_index] = self.array[max_index], self.array[i]
+
+
+    #********************************************************
+    #* nazwa funkcji:       max_value
+    #* parametry wejściowe: start - poczatek zakresu listy
+    #                       stop - koniec zakresu listy
+    #* wartość zwracana:    greatest_index - int - indeks najwyzszej wartosci
+    #* autor:               Ja
+    #* ****************************************************
 
     def max_value(self,start,stop):
         if start is None:
